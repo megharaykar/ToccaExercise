@@ -32,9 +32,9 @@ Filter/Pagination/Sorting : The request body can contain either zero or any comb
 
 Input: With request body (an example as shown below) GET localhost:3000/api/users/
 
-{ "pagination" : { "size" : 5 } }
+{"pagination" : {"size" : 2, "start" : 5}}
 
-Output: The above example input sorts and then the pagination of size 5 is applied.
+Output: The above example input sorts and then the pagination of size 5 and starting at index 5 is applied.
 
 returns status 200ok with the appropriate json content.
 
